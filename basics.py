@@ -265,3 +265,16 @@ def calculate_entropy(np_img):
 
     return ent_r, ent_g, ent_b
 ####
+# ===== Linear Transformation =====
+def linear_transform(np_img, alpha=1.2, beta=30):
+    return cv2.convertScaleAbs(np_img, alpha=alpha, beta=beta)
+
+
+# ===== Histogram Equalization (RGB) =====
+def histogram_equalization(np_img):
+    r, g, b = cv2.split(np_img)
+    r_eq = cv2.equalizeHist(r)
+    g_eq = cv2.equalizeHist(g)
+    b_eq = cv2.equalizeHist(b)
+    return cv2.merge((r_eq, g_eq, b_eq))
+
