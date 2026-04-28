@@ -17,14 +17,17 @@ A lightweight Python-based virtual camera application built using OpenCV. The pr
 This is a prototype-level computer vision project
 Filters and processing are basic transformations rather than advanced ML/CV models
 No deployment pipeline or packaged virtual camera driver implementation
-🎯 Learning Goals
+
+##🎯 Learning Goals
 Understand real-time video processing
 Work with OpenCV frame pipelines
 Explore practical use of computer vision in streaming applications
-▶️ How to Run
+
+##▶️ How to Run
 pip install opencv-python numpy
 python main.py
-📌 Future Improvements
+
+##📌 Future Improvements
 Add GPU acceleration for smoother performance
 Implement advanced filters (segmentation, background removal)
 Package as virtual webcam device (OBS plugin / DirectShow integration)
